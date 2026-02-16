@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ios-filemanagement",
+    name: "relux-file-management",
     platforms: [
         .iOS(.v15)
     ],
@@ -13,17 +13,17 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ivalx1s/darwin-relux.git", .upToNextMajor(from: "8.0.1")),
-        .package(url: "https://github.com/ivalx1s/darwin-httpclient.git", .upToNextMajor(from: "5.0.1")),
-        .package(url: "https://github.com/ivalx1s/darwin-foundationplus.git", .upToNextMajor(from: "3.0.0")),
-        .package(url: "https://github.com/ivalx1s/swift-stdlibplus.git", .upToNextMajor(from: "3.0.0"))
+        .package(url: "https://github.com/relux-works/swift-relux.git", .upToNextMajor(from: "8.0.1")),
+        .package(url: "https://github.com/relux-works/swift-httpclient.git", .upToNextMajor(from: "5.0.1")),
+        .package(url: "https://github.com/relux-works/darwin-foundationplus.git", .upToNextMajor(from: "3.0.0")),
+        .package(url: "https://github.com/relux-works/swift-stdlibplus.git", .upToNextMajor(from: "3.0.0"))
     ],
     targets: [
         .target(
             name: "FileManagementModule",
             dependencies: [
-                .product(name: "Relux", package: "darwin-relux"),
-                .product(name: "HttpClient", package: "darwin-httpclient"),
+                .product(name: "Relux", package: "swift-relux"),
+                .product(name: "HttpClient", package: "swift-httpclient"),
                 .product(name: "FoundationPlus", package: "darwin-foundationplus"),
                 .product(name: "SwiftPlus", package: "swift-stdlibplus"),
             ],

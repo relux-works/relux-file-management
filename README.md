@@ -1,6 +1,6 @@
 # relux-file-management
 
-Relux module for file operations — download, cache, and manage files with retry support. Built on top of `HttpClient` and `Relux`.
+Relux module for file operations: download, cache, and manage files with retry support. Built on top of `HttpClient` and `Relux`.
 
 ### Installation (Swift Package Manager)
 ```swift
@@ -9,6 +9,16 @@ Relux module for file operations — download, cache, and manage files with retr
 ```swift
 .product(name: "FileManagementModule", package: "relux-file-management")
 ```
+
+## The Relux stack
+
+This package is part of the Relux stack: the
+[Relux](https://github.com/relux-works/swift-relux) unidirectional data-flow
+architecture for Swift 6, a family of modules around it, and agent-ready testing
+tools. The stack is how we build MVPs fast on agentic rails and then scale them into
+enterprise-grade apps: Tuist workspaces, strict modularization, and a UDF architecture
+proven in production for years. Browse the full picture in the
+[Relux Works open-source catalog](https://relux.works/en/open-source/).
 
 <!-- relux-ecosystem:start -->
 
